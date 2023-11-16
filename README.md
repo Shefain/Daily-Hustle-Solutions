@@ -1,6 +1,6 @@
 # 📚 Daily-Hustle-Solutions
 
-## 🤝 Welcome to Daily Hustle Solutions!
+## 👀 Overview
 
 This repository is a collection of daily coding challenges I've faced along with their solutions. It serves as a resource to store, recall, and share solutions for common coding hurdles encountered in daily programming.
 

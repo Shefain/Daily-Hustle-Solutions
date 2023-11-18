@@ -1,5 +1,3 @@
-//deep_copy.js
-
 /**
  * Deep copy using JSON methods:
  *

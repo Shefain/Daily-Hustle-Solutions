@@ -1,6 +1,6 @@
 # Copying Array Or Object Immutably
 
-Let's talk about how to copy Array or Object in JavaScript.Here are two ways to do this: the **shallow copy** and the **deep copy**. 
+Let's talk about how to copy Array or Object in JavaScript.Here are two ways to do this: the **shallow copy** and the **deep copy**.
 Sure, let's discuss how to copy both Arrays and Objects in JavaScript using both shallow and deep copy methods.
 
 ## Shallow Copy
@@ -10,7 +10,10 @@ A shallow copy duplicates the top-level structure of the data but retains refere
 Here's an example of shallow copy using spread syntax for an array:
 
 ```javascript
-const originalArray = [[1, 2], [3, 4]];
+const originalArray = [
+  [1, 2],
+  [3, 4],
+];
 const copyArray = [...originalArray];
 copyArray[0][0] = 5;
 console.log(originalArray); // Output: [[5, 2], [3, 4]]
@@ -19,7 +22,10 @@ console.log(originalArray); // Output: [[5, 2], [3, 4]]
 Here's an example of an object:
 
 ```javascript
-const originalObject = { a: { b: 1 }, c: 2 };
+const originalObject = {
+  a: { b: 1 },
+  c: 2,
+};
 const copyObject = { ...originalObject };
 copyObject.a.b = 5;
 console.log(originalObject); // Output: { a: { b: 5 }, c: 2 }
@@ -34,7 +40,10 @@ A deep copy creates a new instance of the original data structure, duplicating e
 Here's an example of deep copy using `JSON.parse(JSON.stringify())` for an array:
 
 ```javascript
-const originalArray = [[1, 2], [3, 4]];
+const originalArray = [
+  [1, 2],
+  [3, 4],
+];
 const copyArray = JSON.parse(JSON.stringify(originalArray));
 copyArray[0][0] = 5;
 console.log(originalArray); // Output: [[1, 2], [3, 4]]
@@ -43,7 +52,10 @@ console.log(originalArray); // Output: [[1, 2], [3, 4]]
 Here's an example of an object:
 
 ```javascript
-const originalObject = { a: { b: 1 }, c: 2 };
+const originalObject = {
+  a: { b: 1 },
+  c: 2,
+};
 const copyObject = JSON.parse(JSON.stringify(originalObject));
 copyObject.a.b = 5;
 console.log(originalObject); // Output: { a: { b: 1 }, c: 2 }

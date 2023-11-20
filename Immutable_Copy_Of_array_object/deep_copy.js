@@ -1,4 +1,5 @@
-//deep_copy.js
+// deep_copy.js
+
 /**
  * Deep copy using JSON methods:
  *
@@ -10,18 +11,20 @@
 
 /**Example of Deep Copy with @Arrays */
 const originalArray = [
-    [1, 2],
-    [3, 4],
-  ];
-  const copyArray = JSON.parse(JSON.stringify(originalArray));
-  copyArray[0][0] = 5;
-  console.log(originalArray); // Output: [[1, 2], [3, 4]]
-  
-  /** Example of Deep Copy with @Objects */
-  const originalObject = {
-    a: { b: 1 },
-    c: { d: 2 },
-  };
-  const copyObject = JSON.parse(JSON.stringify(originalObject));
-  copyObject.a.b = 5;
-  console.log(originalObject); // Output: { a: { b: 1 }, c: { d: 2 } }
+  [1, 2],
+  [3, 4],
+];
+
+const copyArray = JSON.parse(JSON.stringify(originalArray));
+copyArray[0][0] = 5;
+console.log(originalArray); // Output: [[1, 2], [3, 4]]
+
+/** Example of Deep Copy with @Objects */
+const originalObject = {
+  a: { b: 1 },
+  c: { d: 2 },
+};
+
+const copyObject = JSON.parse(JSON.stringify(originalObject));
+copyObject.a.b = 5;
+console.log(originalObject); // Output: { a: { b: 1 }, c: { d: 2 } }

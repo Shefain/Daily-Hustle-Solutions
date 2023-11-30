@@ -24,4 +24,4 @@ This repository is a collection of daily coding challenges I've faced along with
 
 Your contributions are welcome! Fork this repository, add solutions, or suggest improvements via pull requests.
 
-For inquiries or discussions, feel free to contact me at muhammadShefain@gmail.com.
+For inquiries or discussions, feel free to contact me at muhammadShefain@gmail.com

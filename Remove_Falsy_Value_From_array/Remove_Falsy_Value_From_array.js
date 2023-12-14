@@ -1,3 +1,5 @@
+// Remove falsy values from an array
+
 // array with falsy values miscellaneous
 const miscellaneous = ["Apple",NaN,"Mango", null,"Banana",0,"Orange",false,"pineapple",undefined]
 
